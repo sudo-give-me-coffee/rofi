@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Insatall deps
-      run: sudo apt-get install meson bison flex rofi rofi-dev dh-autoreconf bison flex libpango1.0-dev libstartup-notification0-dev libxkbcommon-dev libxkbcommon-x11-dev libxcb1-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-util0-dev librsvg2-dev libxcb-xrm-dev
+      run: sudo apt-get install meson bison flex rofi libxcb-cursor-dev rofi-dev dh-autoreconf bison flex libpango1.0-dev libstartup-notification0-dev libxkbcommon-dev libxkbcommon-x11-dev libxcb1-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-util0-dev librsvg2-dev libxcb-xrm-dev
     - name: Meson
       run: meson build/
 
