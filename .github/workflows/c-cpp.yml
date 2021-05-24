@@ -20,5 +20,5 @@ jobs:
     - name: Ninja
       run: ninja -C build/
     - name: Install
-      run: ninja -C build/ install
+      run: sudo ninja -C build/ install
 
