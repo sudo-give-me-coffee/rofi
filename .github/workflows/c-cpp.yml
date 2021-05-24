@@ -21,4 +21,8 @@ jobs:
       run: ninja -C build/
     - name: Install
       run: sudo ninja -C build/ install
+    - uses: actions/upload-artifact@v2
+      with:
+         name: Upload Rofi
+         path: /usr/local/bin/rofi
 
