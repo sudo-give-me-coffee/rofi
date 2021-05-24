@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: mkdir build && cd build && ../configure && make && sudo make install
+    - name: Insatall deps
+      run: sudo apt-get install meson
+    - name: Meson
+      run: meson build/
 
